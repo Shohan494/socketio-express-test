@@ -5,9 +5,15 @@
 </head>
 <body>
 <h2>Hello World from Socket-Express</h2>
+<!-- using the script for enabling the socket.io -->
 <script src="/socket.io/socket.io.js"></script>
 <script>
   var socket = io();
+  // the set timeout message will appear in html
+  //socket.on('message', function(data){document.write(data)});
+
+  // for the emitting event
+  socket.on('testerEvent', function(data){document.write(data.description)});
 </script>
 </body>
 </html>
