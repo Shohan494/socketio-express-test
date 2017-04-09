@@ -13,7 +13,9 @@
   //socket.on('message', function(data){document.write(data)});
 
   // for the emitting event
-  socket.on('testerEvent', function(data){document.write(data.description)});
+  //socket.on('testerEvent', function(data){document.write(data.description)});
+  // for the client emmitting event
+  socket.emit('clientEvent', 'Sent an event from the client!');
 </script>
 </body>
 </html>
