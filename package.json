@@ -6,10 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Shohan",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2",
     "socket.io": "^1.7.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shohan494/socketio-express-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shohan494/socketio-express-test/issues"
+  },
+  "homepage": "https://github.com/Shohan494/socketio-express-test#readme"
 }
