@@ -1,0 +1,36 @@
+The client API provides us with following built in events:
+
+    connect
+
+    When the client successfully connects.
+    connecting
+
+    When the client is in process of connecting.
+    disconnect
+
+    When the client is disconnected
+    connect_failed
+
+    When connection to server fails
+    error
+
+    An error event is sent from the server
+    message
+
+    When server sends a message using the send function.
+    reconnect
+
+    When reconnection to server is successful.
+    reconnecting
+
+    When the client is in process of connecting.
+    reconnect_failed
+
+    When the reconnection attempt fails.
+    
+
+To handle errors, we can handle these events using out socket object that we created on our client. For example, if we have a connection that fails, we can use the following to connect to the server again:
+
+socket.on('connect_failed', function() {
+    document.write("Sorry, there seems to be an issue with the connection!");
+})
